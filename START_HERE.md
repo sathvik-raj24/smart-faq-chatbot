@@ -51,7 +51,7 @@ paisa per question, but free HuggingFace is fine for this project.)
 
    ```
    LLM_PROVIDER=huggingface
-   COLLEGE_NAME=Your College Name Here
+   COLLEGE_NAME=Vivekananda College of Engineering & Technology
    OPENAI_API_KEY=
    OPENAI_MODEL=gpt-4o-mini
    HF_TOKEN=hf_PASTE_YOUR_TOKEN_HERE
@@ -67,7 +67,9 @@ protects you.
 
 ## STEP 4 - The only 2 changes you might want (both optional)
 
-1. **College name**: in `.env`, change `COLLEGE_NAME=...` (done above).
+1. **College name**: already set to "Vivekananda College of Engineering &"
+   "Technology" in the code and `.env.example`. If you made a `.env` earlier
+   with a different name, just update its `COLLEGE_NAME=` line.
 2. **Your own syllabus**: open `data/syllabus.md` in Notepad and replace
    the text with your course syllabus. Keep every line starting with `## `
    as a section heading. That's it - no code changes needed.
@@ -119,7 +121,7 @@ Run the 5 sample questions + save a transcript: `python demo_questions.py`
    ```toml
    LLM_PROVIDER = "huggingface"
    HF_TOKEN = "hf_PASTE_YOUR_TOKEN_HERE"
-   COLLEGE_NAME = "Your College Name Here"
+   COLLEGE_NAME = "Vivekananda College of Engineering & Technology"
    ```
 
 4. Save. Your bot now lives at a public link like

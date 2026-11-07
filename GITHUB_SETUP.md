@@ -63,7 +63,7 @@ your GitHub repo.
    LLM_PROVIDER = "openai"
    OPENAI_API_KEY = "sk-..."
    OPENAI_MODEL = "gpt-4o-mini"
-   COLLEGE_NAME = "ABC Institute of Technology"
+   COLLEGE_NAME = "Vivekananda College of Engineering & Technology"
    ```
 
    (Use `HF_TOKEN = "hf_..."` instead if you prefer the free HuggingFace

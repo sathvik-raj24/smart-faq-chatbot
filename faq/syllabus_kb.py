@@ -11,9 +11,9 @@ from pathlib import Path
 DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "syllabus.md"
 
 # --- Course metadata (edit here or via environment variables) ---------------
-COURSE_TITLE = "Artificial Intelligence & Machine Learning"
-COURSE_CODE = "CS-604"
-DEGREE_LABEL = "B.Tech CSE - Semester VI"
+COURSE_TITLE = "Computer Networks"
+COURSE_CODE = "BCS502"
+DEGREE_LABEL = "B.E. CSE - Semester V (VTU 2022 Scheme)"
 CREDITS = 4
 
 SAMPLE_QUESTIONS = [
@@ -21,7 +21,7 @@ SAMPLE_QUESTIONS = [
     "How are the marks distributed for this course?",
     "Which textbooks should I refer to?",
     "What are the prerequisites for this course?",
-    "What experiments will I do in the lab?",
+    "What is covered in Module 3?",
 ]
 
 

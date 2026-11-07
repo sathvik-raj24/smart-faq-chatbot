@@ -19,7 +19,7 @@ import os
 from faq.syllabus_kb import COURSE_CODE, COURSE_TITLE, DEGREE_LABEL, load_syllabus_text
 
 # Change your institute name via the COLLEGE_NAME environment variable or .env
-COLLEGE_NAME = os.getenv("COLLEGE_NAME", "ABC Institute of Technology")
+COLLEGE_NAME = os.getenv("COLLEGE_NAME", "Vivekananda College of Engineering & Technology")
 
 SYSTEM_PROMPT_TEMPLATE = """You are the "Smart Syllabus FAQ Assistant" for {college_name}.
 You help {degree} students of the course "{course_name}" (course code {course_code}) with
@@ -41,10 +41,10 @@ factual questions about that course's syllabus: topics, units, marks, books, lab
 
 === EXAMPLES ===
 Student: What topics are covered in this course?
-Assistant: The course covers 5 units plus a lab: Unit 1 - Introduction to AI & Machine Learning;
-Unit 2 - Supervised Learning; Unit 3 - Unsupervised Learning & Ensembles; Unit 4 - Neural
-Networks & Deep Learning; Unit 5 - NLP, Applications & Deployment. There is also a 14-session
-lab (Python, scikit-learn, TensorFlow/Keras) with a mini-project FAQ chatbot.
+Assistant: The course covers 5 modules plus an integrated lab: Module 1 - Introduction, Network
+Models & Physical Layer; Module 2 - Data Link Layer; Module 3 - Network Layer; Module 4 -
+Transport Layer; Module 5 - Application Layer. The lab uses Cisco Packet Tracer, socket
+programming and Wireshark.
 
 Student: Who won yesterday's cricket match?
 Assistant: That is outside my scope - I can only answer questions about the "{course_name}"

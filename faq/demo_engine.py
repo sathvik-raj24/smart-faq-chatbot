@@ -20,19 +20,20 @@ DEMO_NOTICE = (
 
 FALLBACK = (
     "I could not find that in the course syllabus. Try asking about:\n"
-    "- Topics covered, or a specific unit (e.g. \"What is in Unit 4?\")\n"
+    "- Topics covered, or a specific module (e.g. \"What is in Module 3?\")\n"
     "- Marks and assessment\n"
     "- Textbooks and references\n"
     "- Prerequisites\n"
     "- Lab experiments and tools\n"
     "- Attendance policy\n\n"
-    "For anything beyond the syllabus, please contact the Department of CSE."
+    "For anything beyond the syllabus, please contact the Department of CSE, "
+    "Vivekananda College of Engineering & Technology."
 )
 
 # Intent keyword table: checked in order after the specific-unit rule.
 INTENTS: list[tuple[str, tuple[str, ...]]] = [
     ("attendance", ("attendance", "attend", "leave", "policy")),
-    ("topics", ("topic", "cover", "syllabus", "chapter", "portion", "unit", "learn")),
+    ("topics", ("topic", "cover", "syllabus", "chapter", "portion", "unit", "module", "learn")),
     ("prerequisites", ("prerequisit", "background", "know before", "before taking")),
     ("books", ("textbook", "book", "reference", "author", "read")),
     ("lab", ("lab", "practical", "experiment", "software", "tools")),
@@ -83,10 +84,11 @@ def _topics_answer() -> str:
     lab = next((t for t in SECTION_TITLES if "laboratory" in t.lower()), None)
     if lab:
         lines.append(f"- {lab}")
+    module_count = len(lines) - (1 if lab else 0)
     return (
-        "The course has **5 units plus a laboratory component**:\n\n"
+        f"The course has **{module_count} modules plus an integrated laboratory component**:\n\n"
         + "\n".join(lines)
-        + "\n\nAsk about a specific unit (e.g. \"What is in Unit 4?\") for the detailed topics."
+        + "\n\nAsk about a specific module (e.g. \"What is in Module 3?\") for the detailed topics."
     )
 
 
@@ -130,10 +132,10 @@ def answer_from_syllabus(question: str) -> str:
     """Produce the best possible offline answer for a syllabus question."""
     q = question.lower()
 
-    # 1) A specific unit? e.g. "What is in Unit 4?"
-    m = re.search(r"unit\s*([1-5])", q)
+    # 1) A specific module/unit? e.g. "What is in Module 3?"
+    m = re.search(r"(?:module|unit)\s*([1-5])", q)
     if m:
-        section = _section_for_title_pattern(rf"Unit\s*{m.group(1)}\b")
+        section = _section_for_title_pattern(rf"(?:Module|Unit)\s*{m.group(1)}\b")
         if section:
             return section
 

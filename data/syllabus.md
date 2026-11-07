@@ -1,103 +1,86 @@
-# B.Tech CSE - Semester VI
+# B.E. CSE - Semester V (VTU 2022 Scheme)
 
-## Course: Artificial Intelligence & Machine Learning (CS-604)
+## Course: Computer Networks (BCS502)
 
 ## Course Overview
-- Degree / Branch: B.Tech, Computer Science & Engineering - Semester VI
-- Course Code: CS-604 | Course Title: Artificial Intelligence & Machine Learning
-- Credits: 4 (L-T-P: 3-1-0) | Contact hours: 42 lectures + 14 lab sessions
-- Course Coordinator: Department of Computer Science & Engineering
-- Teaching scheme: lectures, lab experiments, 2 assignments and a mini-project
+- Institution: Vivekananda College of Engineering & Technology (Affiliated to Visvesvaraya Technological University, Belagavi)
+- Programme: B.E., Computer Science & Engineering - Semester V
+- Course Code: BCS502 | Course Title: Computer Networks | Scheme: VTU 2022
+- Credits: 4 | Teaching Hours/Week (L:T:P:S): 3:0:2:0
+- Total hours: 40 theory hours + 8-10 lab slots
+- CIE Marks: 50 | SEE Marks: 50 | Total Marks: 100
+- Course Instructor: Department of Computer Science & Engineering
 
 ## Prerequisites
-- Python Programming (functions, files, basic OOP)
-- Data Structures (lists, trees, hashing)
-- Linear Algebra (matrices, vectors)
-- Probability & Statistics (distributions, mean, variance)
+- Data Structures and Algorithms (basic programming skills)
+- Operating Systems fundamentals (processes, resources, system calls)
+- Digital logic and basic discrete mathematics
+- Familiarity with the Linux command line is helpful
 
 ## Course Outcomes (COs)
-- CO1: Explain intelligent agents, search strategies and the ML pipeline.
-- CO2: Apply supervised learning algorithms (regression, trees, SVM, k-NN) to real datasets.
-- CO3: Apply clustering, PCA and ensemble methods to unsupervised problems.
-- CO4: Design and train neural networks, including CNN and RNN/LSTM models.
-- CO5: Build and evaluate a small NLP or recommender application and deploy it as a web app.
+- CO1: Explain data communication fundamentals, network types and the OSI / TCP-IP layered models.
+- CO2: Analyse error detection and correction techniques and the data-link control and MAC protocols.
+- CO3: Apply IPv4/IPv6 addressing and subnetting; describe unicast and multicast routing protocols.
+- CO4: Analyse transport-layer services and the working of UDP and TCP (flow, error and congestion control).
+- CO5: Describe standard application-layer protocols (HTTP, FTP, SMTP, DNS, TELNET, SSH) and client-server programming.
 
-## Syllabus - Unit 1: Introduction to AI & Machine Learning (8 hrs)
-- What is AI: history, applications, ethics and risks of AI
-- Intelligent agents: agents and environments, PEAS, agent types (simple reflex, model-based, goal-based, utility-based, learning agents)
-- Problem solving by search: BFS, DFS, uniform-cost search, A* with heuristics
-- Adversarial search: minimax with alpha-beta pruning
-- Foundations of ML: supervised vs unsupervised vs reinforcement learning, the ML pipeline (data, features, train, evaluate, deploy), overfitting and generalisation
+## Syllabus - Module 1: Introduction, Network Models & Physical Layer (8 hrs)
+- Introduction: data communications, networks, network types (LAN, WAN, MAN), interconnection of networks
+- Network models: protocol layering, the TCP/IP protocol suite, the OSI reference model
+- Introduction to the physical layer: data and signals (analog and digital), transmission impairment, data-rate limits and performance
+- Transmission media: guided media (twisted pair, coaxial, fibre optic), unguided (wireless) media
+- Switching: packet switching and its types (datagram approach and virtual-circuit approach)
 
-## Syllabus - Unit 2: Supervised Learning (10 hrs)
-- Linear regression (least squares, gradient descent) and polynomial features
-- Logistic regression for classification
-- Classification metrics: confusion matrix, accuracy, precision, recall, F1-score, ROC-AUC
-- Decision trees: ID3, CART, entropy, information gain, pruning
-- Naive Bayes classifier
-- k-Nearest Neighbours (k-NN)
-- Support Vector Machines: maximum margin, kernel trick
-- Cross-validation, bias-variance trade-off, L1 and L2 regularisation
+## Syllabus - Module 2: Data Link Layer (8 hrs)
+- Error detection and correction: introduction, block coding, linear block codes, cyclic codes (CRC), checksum
+- Data link control (DLC) services: framing, flow control and error control, connectionless vs connection-oriented services
+- Data link layer protocols; High-level Data Link Control (HDLC)
+- Media access control: random access (ALOHA, CSMA, CSMA/CD, CSMA/CA), controlled access (reservation, polling, token passing)
+- Checksum computation; Point-to-Point Protocol (PPP)
 
-## Syllabus - Unit 3: Unsupervised Learning & Ensembles (8 hrs)
-- Clustering: k-means, hierarchical (agglomerative) clustering, DBSCAN
-- Dimensionality reduction: PCA, PCA vs LDA
-- Ensemble learning: bagging and Random Forest
-- Boosting: AdaBoost, Gradient Boosting, XGBoost (overview)
+## Syllabus - Module 3: Network Layer (8 hrs)
+- Introduction to the network layer: network-layer services, packet switching, forwarding
+- IPv4 addressing: classful and classless addressing, subnetting and supernetting, NAT
+- IPv4 datagram format; forwarding of IP packets
+- Next generation IP: IPv6 datagram format, transition from IPv4 to IPv6
+- Unicast routing: routing algorithms (distance-vector, link-state, path-vector), RIP, OSPF, BGP
+- Multicast routing: basics of multicasting and MOSPF
 
-## Syllabus - Unit 4: Neural Networks & Deep Learning (10 hrs)
-- Perceptron and Multi-Layer Perceptron (MLP)
-- Activation functions: sigmoid, ReLU, tanh, softmax
-- Backpropagation and gradient descent variants (batch, mini-batch, stochastic)
-- Learning-rate schedules, weight initialisation
-- Regularisation: dropout, early stopping, batch normalisation
-- Convolutional Neural Networks: convolution, pooling, LeNet/AlexNet overview
-- Recurrent Neural Networks and LSTM
-- Introduction to Transformers and Large Language Models (LLMs)
+## Syllabus - Module 4: Transport Layer (8 hrs)
+- Introduction to the transport layer: services, port numbers, encapsulation/decapsulation, multiplexing and demultiplexing
+- UDP: user datagram format, UDP services and applications
+- TCP: services and features, segment format, TCP connections (three-way handshake, connection termination)
+- TCP flow control (sliding window), error control and retransmission
+- TCP congestion control: slow start, congestion avoidance (AIMD), TCP timers
 
-## Syllabus - Unit 5: NLP, Applications & Deployment (8 hrs)
-- Text preprocessing: tokenisation, stemming, lemmatisation, stop-word removal
-- Text representation: Bag-of-Words, TF-IDF, word embeddings (Word2Vec)
-- Applications: sentiment analysis, spam detection, chatbots, recommendation systems
-- Reinforcement learning basics: MDPs and Q-learning
-- Model deployment basics: saving models, web apps with Streamlit, responsible AI
+## Syllabus - Module 5: Application Layer (8 hrs)
+- Introduction to the application layer: client-server paradigm, client-server programming
+- World Wide Web and HTTP
+- File Transfer Protocol (FTP)
+- Electronic mail: architecture, SMTP, mail access protocols (POP3, IMAP)
+- Domain Name System (DNS): name space, resource records, name resolution
+- TELNET and Secure Shell (SSH)
 
-## Laboratory Component (14 sessions)
-- Language and tools: Python 3.10+, Jupyter Notebook, NumPy, Pandas, Matplotlib, scikit-learn, TensorFlow/Keras, Streamlit
-- Experiment 1: Linear regression on a housing-prices dataset
-- Experiment 2: Logistic regression on the Iris dataset
-- Experiment 3: Decision tree and Naive Bayes on a spam/ham dataset
-- Experiment 4: k-NN and SVM on handwritten digits
-- Experiment 5: k-means clustering on the Mall Customers dataset
-- Experiment 6: PCA visualisation on Iris
-- Experiment 7: Random Forest and XGBoost on a Kaggle dataset
-- Experiment 8: Building an MLP on MNIST with Keras
-- Experiment 9: CNN on CIFAR-10
-- Experiment 10: Sentiment analysis with TF-IDF + Logistic Regression
-- Experiments 11-14: Mini-project - an FAQ chatbot for this syllabus, deployed with Streamlit
+## Laboratory Component (8-10 Lab Slots)
+- Network simulation with Cisco Packet Tracer: building LANs, IP addressing, router and switch configuration
+- TCP/IP utilities: ping, traceroute/tracert, ipconfig, arp, nslookup
+- Subnetting exercises and VLSM calculations
+- Socket programming: TCP and UDP client-server programs (Python/C)
+- Packet capture and analysis with Wireshark (HTTP, DNS, TCP handshake observation)
+- Mini network design and demonstration project
 
 ## Textbooks & References
-- Textbook 1: S. Russell and P. Norvig, "Artificial Intelligence: A Modern Approach", 4th Edition, Pearson
-- Textbook 2: T. Mitchell, "Machine Learning", McGraw-Hill
-- Textbook 3: A. Geron, "Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow", 3rd Edition, O'Reilly
-- Reference 1: I. Goodfellow, Y. Bengio and A. Courville, "Deep Learning", MIT Press
-- Reference 2: C. Bishop, "Pattern Recognition and Machine Learning", Springer
+- Textbook 1: B. A. Forouzan, "Data Communications and Networking with TCP/IP Protocol Suite", 6th Edition, Wiley (VTU prescribed)
+- Reference 1: A. S. Tanenbaum, N. Feamster and D. J. Wetherall, "Computer Networks", 6th Edition, Pearson
+- Reference 2: J. F. Kurose and K. W. Ross, "Computer Networking: A Top-Down Approach", 8th Edition, Pearson
+- Reference 3: L. L. Peterson and B. S. Davie, "Computer Networks: A Systems Approach", 6th Edition, Morgan Kaufmann
 
 ## Assessment & Grading (Total 100 Marks)
-- End-Semester Examination: 60 marks (3 hours, covers all 5 units)
-- Mid-Semester Test: 20 marks (covers Units 1-3, held in Week 7)
-- Lab evaluation + viva: 10 marks (Week 12)
-- Assignments and quizzes: 10 marks (2 assignments + surprise quizzes)
-- Passing criteria: 40% overall as per institute norms
+- CIE (Continuous Internal Evaluation): 50 marks (internal assessment tests and assignments as per VTU norms)
+- SEE (Semester End Examination): 50 marks (3-hour exam; answer five full questions, choosing one full question from each module, as per the VTU question paper pattern)
+- Passing criteria: as per VTU norms for CIE and SEE
 
 ## Attendance & Policies
-- Minimum 75% attendance is mandatory to be eligible for the end-semester examination
-- Late assignment submissions lose 20% of marks per day
-- Academic integrity: plagiarism in assignments or the mini-project leads to zero marks
-- Students must bring their own laptop for lab sessions
-
-## Academic Calendar (Indicative)
-- Mid-semester test: Week 7
-- Lab evaluation and viva: Week 12
-- Mini-project demo: Week 14
-- End-semester examination: as per institute exam schedule
+- Minimum 85% attendance is required for SEE eligibility (condonation up to 10% as per VTU norms)
+- Assignments must be submitted on the dates announced by the course instructor
+- Academic integrity: plagiarism in assignments leads to zero marks and disciplinary action
